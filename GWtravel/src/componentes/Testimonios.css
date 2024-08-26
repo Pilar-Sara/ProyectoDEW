@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.section h1{
+   font-family: Georgia;
+   text-align: justify;
+   font-size: 50px;
+   color: #41379c;
+   margin: 50px;
+}
+
+.textoU{
+   font-family: Georgia;
+   text-align: justify;
+   font-size: 15px;
+   padding: 20px;
+   color: rgb(0, 0, 0);
+}
+.section{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.misusuarios{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 70%;
+    gap: 20px;
+}
+.figura {
+    background-color: rgb(255, 240, 233);
+    width: 30%;
+    height: 530px;
+    border: 1px solid #7327bb;
+    border-radius: 8px;
+    box-shadow: 0 0 15px #a65bd8;
+}
+.iconosU img{
+    width: 70%;
+    height: 150px;
+    border:5px solid rgb(79, 6, 94);
+    border-radius: 100px;
+}
+.iconosU{
+    text-align: center;
+    flex-direction: column;
+}
+.figura figcaption{
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+    color: #03bfe0;
+}
+
+.figura figcaption:hover{
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+    color: #103266;
+}
+.opinion{
+    text-align: center;
+    flex-direction: column;
+}
+
+.comentarios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 50px 0;
+}
+.comment-box {
+    margin-bottom: 20px;
+    
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 2px solid #36828f;
+    background-color: #f0faf4;
+}
+textarea {
+    resize: none;
+}
+
+.comment-display {
+    margin-top: 30px;
+    background-color: #f0faf4;
+    padding: 20px;
+    border: 2px solid #36828f;
+}
+
+.comment {
+    background-color: #e4e4e4;
+    border: 1px solid #36828f ;
+}
+
+h3 {
+    font-size: 200%;
+    color: #a580f0;
+    
+}
+
+.comment p {
+    margin: 5px 0 0 0;
+}
+.comiboton{
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    margin: 5px;
+    text-align: center;
+    color: #083824;
+    background-color: #bcf7c4;
+}
+
+.comiboton:hover {
+    background-color: #45a049;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
