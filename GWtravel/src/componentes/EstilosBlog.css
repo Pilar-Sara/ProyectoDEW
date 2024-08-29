@@ -70,8 +70,8 @@ header.abajo ul li a{
     justify-content: center;
 }
 .ratio{
-    width: 50%;
-    height: 60vh;
+    width: 45%;
+    height: 450px;
     box-shadow: -10px 0px 50px 35px rgba(45, 0, 248, 0.212);
     padding: 20px;
     display: flex;
@@ -248,7 +248,7 @@ justify-items: center;
     justify-content: center; 
     padding: 20px 30px 20px 30px;
     box-shadow: 10px 5px 20px rgba(120, 137, 192, 0.801);
-    height: 40vh;
+    height: 300px;
     width: 350px;
     margin-bottom: 20px;
 }
@@ -290,7 +290,7 @@ justify-items: center;
     justify-content: center; 
     padding: 20px 30px 20px 30px;
     box-shadow: 10px 5px 20px rgba(120, 137, 192, 0.801);
-    height: 40vh;
+    height: 300px;
     width: 350px;
     margin-bottom: 20px;
 }
