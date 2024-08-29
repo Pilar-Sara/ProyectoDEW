@@ -6,8 +6,8 @@ import img3 from '../imagenes/calidad.png'
 // Datos de ejemplo
 const valores = [
   { title: 'Calidad', imgSrc: img1 ,  description: 'Ofrecemos servicios de la más alta calidad para asegurar tu satisfacción.' },
-  { title: 'Seguridad', imgSrc: img2, description: 'Ofrecemos servicios de la más alta calidad para asegurar tu satisfacción.'  },
-  { title: 'Garantía', imgSrc: img3, description: 'Ofrecemos servicios de la más alta calidad para asegurar tu satisfacción.'  }
+  { title: 'Seguridad', imgSrc: img2, description: 'Garantizamos protección en cada viaje con estrictos protocolos'  },
+  { title: 'Garantía', imgSrc: img3, description: 'Aseguramos tu satisfacción total con nuestro servicio personalizado.'  }
 ];
 
 function ValoresNosotros() {

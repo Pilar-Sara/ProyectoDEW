@@ -199,7 +199,9 @@ nav ul li .submenu li:hover{
     z-index: 1;
 }
 
-
+#titulo{
+    color: #168181;
+}
 .b-lineas {
     position: relative;
     top: -120px;
@@ -230,7 +232,7 @@ nav ul li .submenu li:hover{
     width: 70%;
     text-align: center;
     margin: 20px 0;
-    color: #168181;
+    color: #062020;
     font-size: 17pt;
 }
 #inicio-regiones {

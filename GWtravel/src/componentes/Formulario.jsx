@@ -31,7 +31,7 @@ const EfectoContacto = () => {
             <Form onSubmit={realizarEnvio}>
                 <Form.Group className="form-group">
                     <Form.Label className="w-b">Nombres y apellidos:</Form.Label>
-                    <Form.Control id="name" type="text" placeholder="Nombres y apellidos" required value={Nombres} onChange={(e) => setNombres(e.target.value)} />
+                    <Form.Control id="name" type="text" placeholder="Nombre completo" required value={Nombres} onChange={(e) => setNombres(e.target.value)} />
                 </Form.Group>
             <Row className="par1">
                 <Col className="uni">
@@ -43,7 +43,7 @@ const EfectoContacto = () => {
                 <Col className="uni">
                     <Form.Group className="form-group">
                         <Form.Label className="w-b">Correo</Form.Label>
-                        <Form.Control type="text" placeholder="Correo" required value={Correo} onChange={(e) => setCorreo(e.target.value)} />
+                        <Form.Control type="text" placeholder="Correo electrónico" required value={Correo} onChange={(e) => setCorreo(e.target.value)} />
                     </Form.Group>
                 </Col>
             </Row>
@@ -66,13 +66,13 @@ const EfectoContacto = () => {
                 <Col className="uni">
                 <Form.Group className="form-group">
                     <Form.Label className="w-b">Salida</Form.Label>
-                    <Form.Control type="text" placeholder="Salida" required value={Salida} onChange={(e) => setSalida(e.target.value)} />
+                    <Form.Control type="date" placeholder="dd/mm/yyyy" required value={Salida} onChange={(e) => setSalida(e.target.value)} />
                 </Form.Group>
                 </Col>
                 <Col className="uni">
                 <Form.Group className="form-group">
                     <Form.Label className="w-b">Retorno</Form.Label>
-                    <Form.Control type="text" placeholder="Retorno" required value={Retorno} onChange={(e) => setRetorno(e.target.value)} />
+                    <Form.Control type="date" placeholder="dd/mm/yyyy" required value={Retorno} onChange={(e) => setRetorno(e.target.value)} />
                 </Form.Group>
                 </Col>
             </Row>

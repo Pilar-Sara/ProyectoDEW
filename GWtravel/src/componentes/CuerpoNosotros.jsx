@@ -7,15 +7,16 @@ function CuerpoNosotros() {
     <div className="n-cuerpo">
         <div className="n-izquierda">
             <h1>SOBRE NOSOTROS</h1>
-            <p>Somos una agencia de turismo apasionada
-               por mostrar lo mejor de Perú, desde las 
-               playas doradas de la Costa hasta las
-             majestuosas montañas de la Sierra y las
-             exuberantes selvas de la Amazonía. Con
-              más de 5 años de experiencia, 
-              nos especializamos en crear itinerarios
-           únicos que permiten a nuestros clientes 
-           vivir la autenticidad de cada destino.
+            <p>Fundada en 2022 por un grupo de entusiastas
+               del turismo, GW-TRAVEL nació con la visión de ofrecer 
+               experiencias de viaje excepcionales y auténticas. Desde 
+               nuestros humildes comienzos, hemos crecido para convertirnos
+                en líderes en la industria del turismo, conectando a 
+                viajeros con los destinos más fascinantes del mundo. 
+                Con una pasión por descubrir nuevas culturas y ofrecer 
+                un servicio impecable, hemos construido una reputación 
+                sólida basada en la
+               confianza y la satisfacción del cliente.
 
             </p>
         </div>

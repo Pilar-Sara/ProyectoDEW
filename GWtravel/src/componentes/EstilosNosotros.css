@@ -12,6 +12,7 @@
     width: 50%;
     text-align: justify;
     margin-top: 20px;
+    font-size: 13pt;
 }
 .n-cuerpo h1{
     padding: 10px 40px;
@@ -24,7 +25,7 @@
     flex-direction: column;
 }
 .n-izquierda h1, .n-centro h1, .n-derecha h1{
-    color: #741f8e;
+    color: #460758;
     font-size: 18pt;
 }
 .n-izquierda{

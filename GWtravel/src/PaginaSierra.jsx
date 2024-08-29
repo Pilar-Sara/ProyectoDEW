@@ -14,8 +14,8 @@ function sierra(){
             
             boton3="Catedral"
             />
-            <Sierra2/>
             <Sierra3/>
+            <Sierra2/>
         </>
     )
 }
