@@ -1,5 +1,6 @@
 import React from "react"
 import contactanos from '../imagenes/inicio-contact.jpg'
+import { Link } from "react-router-dom";
 
 function ContactoInicio() {
     return (
@@ -13,7 +14,7 @@ function ContactoInicio() {
                 soluta reiciendis saepe vel, facilis illo iste. Ipsa 
                 doloremque a voluptas praesent
                 ium fugit ipsum deserunt.</p>
-            <button>Contáctanos</button>
+            <Link to="/PaginaContacto"><button>Contáctanos</button></Link>
         </section>
     </div>
   );

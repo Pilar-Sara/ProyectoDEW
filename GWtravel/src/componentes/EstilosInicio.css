@@ -382,8 +382,9 @@ nav ul li .submenu li:hover{
     justify-content: center;
     align-items: center;
     color:#69218B;
-    font-size: 17pt;
-
+}
+.contact section h1{
+    font-size: 20pt;
 }
 .contact p{
 text-align: justify;
