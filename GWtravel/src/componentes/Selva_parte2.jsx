@@ -17,7 +17,7 @@ function Selva2() {
                 <div class="lugares">
                     <figcaption>
                     Oxapampa,Pozuzo y Villa Rica  
-                    </figcaption><br />
+                    </figcaption><br /><br/>
                     <div class="dias">
                         <p>
                            3D/2N
@@ -41,7 +41,7 @@ function Selva2() {
                 <div class="lugares">
                     <figcaption>
                     Oxapampa,Pozuzo y Villa Rica  
-                    </figcaption><br />
+                    </figcaption><br /><br/>
                     <div class="dias">
                         <p>
                         5D/4N

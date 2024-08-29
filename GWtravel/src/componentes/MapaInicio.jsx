@@ -6,6 +6,7 @@ import mapa from '../imagenes/i-peru.png';
 import mapaCosta from '../imagenes/i-costa.png'
 import mapaSierra from '../imagenes/i-sierra.png'
 import mapaSelva from '../imagenes/i-selva.png'
+import { Link } from 'react-router-dom';
 
 function MapaInicio() {
   const [imagenCentro, setImagenCentro] = useState(mapa);
@@ -20,7 +21,7 @@ function MapaInicio() {
       <h1>Bienvenidos a GW TRAVEL</h1>
       <div id="inicio-regiones">
         <section className="izquierda">
-          <a
+          <Link to="/PaginaCosta"><a
             className="icosta"
             href=""
             onMouseEnter={() => { cambiarImagenCentro(mapaCosta); setZoomClass('zoom-in'); }}
@@ -29,8 +30,8 @@ function MapaInicio() {
             <p>COSTA</p>
             <img src={costa} alt="Costa" />
           </a>
-         
-          <a
+          </Link>
+          <Link to="/PaginaSierra"><a
             className="isierra"
             href=""
             onMouseEnter={() => { cambiarImagenCentro(mapaSierra); setZoomClass('zoom-in'); }}
@@ -38,13 +39,13 @@ function MapaInicio() {
           >
            <p>SIERRA</p>
             <img src={sierra} alt="Sierra" />
-          </a>
+          </a></Link>
         </section>
         <section className="centro">
           <img id="imagen-centro" src={imagenCentro} alt="Centro" className={zoomClass} />
         </section>
         <section className="derecha">
-          <a
+        <Link to="/PaginaSelva"><a
             className="iselva"
             href=""
             onMouseEnter={() => { cambiarImagenCentro(mapaSelva); setZoomClass('zoom-in'); }}
@@ -52,7 +53,7 @@ function MapaInicio() {
           >
             <p>SELVA</p>
             <img src={selva} alt="Selva" />
-          </a>
+          </a></Link>
         </section>
       </div>
     </div>

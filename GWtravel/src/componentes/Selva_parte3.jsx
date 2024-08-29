@@ -66,7 +66,7 @@ function Selva3() {
             <div class="lugares">
             <figcaption>
                 Chachapoyas 
-            </figcaption><br />
+            </figcaption><br /><br/>
             <div class="dias">
                 <p>
                     5D/3N
