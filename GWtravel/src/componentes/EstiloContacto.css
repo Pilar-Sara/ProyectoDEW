@@ -71,6 +71,9 @@
     padding: 10px 30%;
 }
 
+
+
+
 label {
     color: #000000;
     font-size: 17px;
@@ -93,7 +96,12 @@ textarea {
 }
 
 .content-form{
-    padding: 2% 30%;
+    max-width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 button {
@@ -139,4 +147,12 @@ button:hover {
     height: 40px;
 
 }
-
+.par1 {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    width: 100%;
+}
+.uni{
+   width: 50%;
+}

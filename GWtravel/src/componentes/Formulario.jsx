@@ -29,6 +29,7 @@ const EfectoContacto = () => {
     return (
         <div className="content-form">
             <Form onSubmit={realizarEnvio}>
+
             <Form.Group className="form-group">
                 <Form.Label className="w-b">Nombres y apellidos:</Form.Label>
                 <Form.Control id="name" type="text" placeholder="Nombres y apellidos" required value={Nombres} onChange={(e) => setNombres(e.target.value)} />
@@ -63,6 +64,8 @@ const EfectoContacto = () => {
                 <Form.Label className="w-b">Retorno</Form.Label>
                 <Form.Control type="text" placeholder="Retorno" required value={Retorno} onChange={(e) => setRetorno(e.target.value)} />
             </Form.Group>
+
+
 
             <button type="submit">Enviar</button>
         </Form>

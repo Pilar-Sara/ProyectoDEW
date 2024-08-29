@@ -5,6 +5,7 @@ import PaginaInicio from './PaginaInicio.jsx'
 import PaginaNosotros from './PaginaNosotros.jsx'
 import PaginaSierra from './PaginaSierra.jsx'
 import PaginaSelva from './PaginaSelva.jsx'
+import PaginaSierra from './PaginaSierra.jsx'
 import PaginaTestimonios from './PaginaTestimonios.jsx'
 import Footer from "./componentes/Footer.jsx";
 import PaginaBlog from './PaginaBlog.jsx'
