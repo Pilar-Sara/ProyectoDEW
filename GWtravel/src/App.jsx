@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Menu from './componentes/Menu.jsx'
 import PaginaInicio from './PaginaInicio.jsx'
 import PaginaNosotros from './PaginaNosotros.jsx'
-import PaginaSierra from './PaginaSierra.jsx'
 import PaginaSelva from './PaginaSelva.jsx'
 import PaginaSierra from './PaginaSierra.jsx'
 import PaginaTestimonios from './PaginaTestimonios.jsx'
@@ -21,6 +20,9 @@ import PaginaTumbes from "./PaginaTumbes.jsx";
 import PaginaOxapampa from "./PaginaOxapampa.jsx";
 import PaginaIquitos from "./PaginaIquitos.jsx";
 import PaginaChanchamayo from "./PaginaChanchamayo.jsx";
+import PaginaLaMerced from "./PaginaLaMerced.jsx";
+import PaginaPozuzo from "./PaginaPozuzo.jsx";
+import PaginaChachapoyas from "./PaginaChachapoyas.jsx";
 
 function App(){
   return(
@@ -47,6 +49,9 @@ function App(){
           <Route path="/PaginaOxapampa" element={<PaginaOxapampa/>} />
           <Route path="/PaginaIquitos" element={<PaginaIquitos/>} />
           <Route path="/PaginaChanchamayo" element={<PaginaChanchamayo/>} />
+          <Route path="/PaginaLaMerced" element={<PaginaLaMerced/>} />
+          <Route path="/PaginaPozuzo" element={<PaginaPozuzo/>} />
+          <Route path="/PaginaChachapoyas" element={<PaginaChachapoyas/>} />
         </Routes>
         <Footer/>
       </Router>

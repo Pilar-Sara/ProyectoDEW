@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import React, { useEffect } from 'react';
 import logoGW from '../imagenes/logo 2.png'
 import '../componentes/EstilosInicio.css';
@@ -23,26 +23,27 @@ function Menu() {
     return (
       <header>
         <div id="cabecera">
-          <Link to="/">
+          <NavLink to="/">
             <img className="logoMenu" src={logoGW} alt="Logo"/>
             GW TRAVEL
-          </Link>
+          </NavLink>
         </div>
         <nav>
-          <ul>
-            <li><Link to="/">INICIO</Link></li>
-            <li><Link to="/PaginaNosotros">NOSOTROS</Link></li>
-            <li><Link to="/PaginaDestino">DESTINOS</Link>
-              <ul className="submenu">
-                <li><Link to="/PaginaCosta">Costa</Link></li>
-                <li><Link to="/PaginaSierra">Sierra</Link></li>
-                <li><Link to="/PaginaSelva">Selva</Link></li>
-              </ul>
-            </li>
-            <li><Link to="/PaginaTestimonios">TESTIMONIOS</Link></li>
-            <li><Link to="/PaginaBlog">BLOG</Link></li>
-            <li><Link to="/PaginaContacto">CONTACTO</Link></li>
-          </ul>
+        <ul>
+          <li><NavLink to="/" className={({ isActive }) => isActive ? "activo" : ""} end>INICIO</NavLink></li>
+          <li><NavLink to="/PaginaNosotros" className={({ isActive }) => isActive ? "activo" : ""}>NOSOTROS</NavLink></li>
+          <li>
+            <NavLink to="/PaginaDestino" className={({ isActive }) => isActive ? "activo" : ""}>DESTINOS</NavLink>
+            <ul className="submenu">
+              <li><NavLink to="/PaginaCosta" className={({ isActive }) => isActive ? "activo" : ""}>Costa</NavLink></li>
+              <li><NavLink to="/PaginaSierra" className={({ isActive }) => isActive ? "activo" : ""}>Sierra</NavLink></li>
+              <li><NavLink to="/PaginaSelva" className={({ isActive }) => isActive ? "activo" : ""}>Selva</NavLink></li>
+            </ul>
+          </li>
+          <li><NavLink to="/PaginaTestimonios" className={({ isActive }) => isActive ? "activo" : ""}>TESTIMONIOS</NavLink></li>
+          <li><NavLink to="/PaginaBlog" className={({ isActive }) => isActive ? "activo" : ""}>BLOG</NavLink></li>
+          <li><NavLink to="/PaginaContacto" className={({ isActive }) => isActive ? "activo" : ""}>CONTACTO</NavLink></li>
+        </ul>
         </nav>
       </header>
     );

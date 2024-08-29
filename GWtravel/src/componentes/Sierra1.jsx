@@ -2,7 +2,7 @@ import React from "react";
 import imagen2 from '../imagenes/S-7colores.jpg'
 import imagen3 from '../imagenes/S-Catedral.jpg'
 import imagen1 from '../imagenes/S-Macchu.png'
-import './EstiloSierra.css'
+import '../componentes/EstiloSierra.css'
 
 function Sierra1({ Destinos, macchuText, boton1, montanaText, boton2, catedralText, boton3 }) {
   return (

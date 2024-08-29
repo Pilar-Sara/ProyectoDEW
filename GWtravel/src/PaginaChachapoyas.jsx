@@ -2,26 +2,26 @@ import { Fragment } from "react";
 import Banner_costa from './componentes/BannerCosta';
 import DescripcionCosta from "./componentes/DescripcionCosta";
 import CCompra from './componentes/CCompra';
-import Oxa from './imagenes/oxapampa1.jpg'
+import Chachapoyas from './imagenes/chachapoyas1.jpg'
 import './componentes/Costa.css';
-import DesOxa from './imagenes/oxapampa4.jpg'
+import DesChachapoyas from './imagenes/chachapoyas3.jpeg'
 
 
-function PaginaOxapampa() {
+function PaginaChachapoyas() {
     
     return (
         <>
          <Banner_costa
-            imagen={Oxa}
-            nombre = "Oxapampa"
+            imagen={Chachapoyas}
+            nombre = "Chachapoyas"
             />
 
             <div className="content">
                 <DescripcionCosta
-                imagen={DesOxa}
-                deDonde="De Lima a Oxapampa."
-                tiempo="En bus : 5 horas"
-                precio="S/ 295"
+                imagen={DesChachapoyas}
+                deDonde="De Lima a La Merced."
+                tiempo="En bus : 10 horas"
+                precio="S/ 670"
                 descripcion="Empezaremos el City Tour en Ica. Iremos al lugar con el apoyo de nuestros guias que les daran
                 recomendaciones. Los lugares seleccionados seran visitados todo el dia, conociendo la variedad
                 de actividades que hay en cada lugar de Ica."
@@ -30,14 +30,14 @@ function PaginaOxapampa() {
                 {/*Contenido de la derecha */}
 
                 <CCompra
-                    actividad1="Visita la PLAZA PRINCIPAL DE OXAPAMPA e IGLESIA SANTA ROSA"
-                    actividad2="MIRADOR LA FLORIDA en el distrito de CHONTABAMBA"
-                    actividad3="Recorrer las instalaciones de una DESTILERÍA"
-                    actividad4="Visitar POZUZO “COLONIA AUSTRO-ALEMANA”"
-                    actividad5="Cataratas RAYANTAMBO y YULITUNQUI en el distrito de  Huancabamba "
-                    actividad6="PARQUE NACIONAL YANACHAGA-CHEMILLÉN "
-                    actividad7="POZAS DE AGUAS CRISTALINAS "
-                    actividad8="PUENTE COLGANTE EMPERADOR GUILLERMO"
+                    actividad1="Visita a las casas flotantes "
+                    actividad2="Navegación por el río Amazonas"
+                    actividad3="Caminata por selva primaria conociendo flora y fauna."
+                    actividad4="Tour por el río Amazonas para buscar los delfines grises y rosados "
+                    actividad5="CVisita a familia ribereña donde preservan algunas especies de animales "
+                    actividad6="Bebidas típicas afrodisíacas con poder medicinal. "
+                    actividad7="Puesta del sol sobre el Amazonas."
+                    actividad8="Visita al grupo nativo Yagua "
 
                     recomendacion1="Viste ropa ligera y de manga larga para protegerte de 
                 insectos."
@@ -55,4 +55,4 @@ function PaginaOxapampa() {
     );
 }
 
-export default PaginaOxapampa;
+export default PaginaChachapoyas;

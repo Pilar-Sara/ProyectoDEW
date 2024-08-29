@@ -1,6 +1,7 @@
 import lamerced2 from '../imagenes/lamerced2.jpg'
 import SanRamon2 from '../imagenes/SanRamon2.jpg'
 import chachapoyas2 from '../imagenes/chachapoyas2.jpg'
+import { Link } from 'react-router-dom';
 
 function Selva3() {
     return (
@@ -24,11 +25,13 @@ function Selva3() {
                     </p>
                     </div>
                     <h3 class="precio">S/.530 por alumno</h3>
-                    <div class="paquete">
-                        <button type="button" onclick="paqute4()">
-                            Ver paquete
-                        </button> 
-                    </div>
+                <div class="paquete">
+                    <Link to="/PaginaLaMerced">
+                        <button type="button" onclick="paqute1()">
+                        Ver paquete
+                        </button>
+                    </Link>
+                </div>
                 </div>
         </div>
 
@@ -48,9 +51,11 @@ function Selva3() {
                 </div>
                 <h3 class="precio">S/.761 por alumno</h3>
                 <div class="paquete">
-                    <button type="button" onclick="paqute5()">
+                    <Link to="/PaginaPozuzo">
+                        <button type="button" onclick="paqute1()">
                         Ver paquete
-                    </button> 
+                        </button>
+                    </Link>
                 </div>
             </div>
     </div>
@@ -69,9 +74,11 @@ function Selva3() {
             </div>
                 <h3 class="precio">S/.980 por alumno</h3>
                 <div class="paquete">
-                    <button type="button" onclick="paqute6()">
+                    <Link to="/PaginaChachapoyas">
+                        <button type="button" onclick="paqute1()">
                         Ver paquete
-                    </button> 
+                        </button>
+                    </Link>
                 </div>
             </div>
     </div>

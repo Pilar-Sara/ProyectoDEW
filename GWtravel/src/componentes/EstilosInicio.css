@@ -96,6 +96,12 @@ nav ul li .submenu li:hover{
     display: block;
     width: 128px;
 }
+.activo {
+    background-color: #168181; 
+    color: white; 
+    border-radius: 5px;
+    padding: 5px 10px; 
+  }
 
 /* Estilos para botones de redes sociales*/
 .redes{
@@ -439,8 +445,9 @@ footer::before {
     margin: 10px 30px;
     padding: 20px 0;
 }
-.logo-footer{
-    width: 25%;
+.flogo{
+    width: 20%;
+    margin-right: 10px;
 }
 
 #arriba .f-izquierdo{

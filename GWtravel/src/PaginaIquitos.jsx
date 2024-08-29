@@ -2,9 +2,9 @@ import { Fragment } from "react";
 import Banner_costa from './componentes/BannerCosta';
 import DescripcionCosta from "./componentes/DescripcionCosta";
 import CCompra from './componentes/CCompra';
-import Ica from './imagenes/Ica-Costa.jpg'
+import Iquitos from './imagenes/SanRamon1.jpg'
 import './componentes/Costa.css';
-import DesIca from './imagenes/Ica-Compra.jpg'
+import DesIquitos from './imagenes/P_Iquitos.jpg'
 
 
 function PaginaIquitos() {
@@ -12,15 +12,15 @@ function PaginaIquitos() {
     return (
         <>
          <Banner_costa
-            imagen={Ica}
+            imagen={Iquitos}
             nombre = "Iquitos"
             />
 
             <div className="content">
                 <DescripcionCosta
-                imagen={DesIca}
-                deDonde="De Lima a Ica."
-                tiempo="En bus : 5 horas"
+                imagen={DesIquitos}
+                deDonde="De Lima a Iquitos."
+                tiempo="En bus : 10 horas"
                 precio="S/ 670"
                 descripcion="Empezaremos el City Tour en Ica. Iremos al lugar con el apoyo de nuestros guias que les daran
                 recomendaciones. Los lugares seleccionados seran visitados todo el dia, conociendo la variedad
