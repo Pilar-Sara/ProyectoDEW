@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Menu from './componentes/Menu.jsx'
 import PaginaInicio from './PaginaInicio.jsx'
 import PaginaNosotros from './PaginaNosotros.jsx'
+import PaginaSierra from './PaginaSierra.jsx'
 import PaginaSelva from './PaginaSelva.jsx'
 import PaginaTestimonios from './PaginaTestimonios.jsx'
 import Footer from "./componentes/Footer.jsx";
@@ -30,6 +31,7 @@ function App(){
           <Route path="/" element={<PaginaInicio/>} />
           <Route path="/PaginaNosotros" element={<PaginaNosotros/>} />
           <Route path="/PaginaSelva" element={<PaginaSelva/>} />
+          <Route path="/PaginaSierra" element={<PaginaSierra/>}/>
           <Route path="/PaginaTestimonios" element={<PaginaTestimonios/>} />
           <Route path="/PaginaBlog" element={<PaginaBlog/>} />
           <Route path="/PaginaDestino" element={<PaginaDestino/>} />

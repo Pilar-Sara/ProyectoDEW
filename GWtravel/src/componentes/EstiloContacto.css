@@ -67,6 +67,9 @@
     justify-content: center;
 }
 
+.form{
+    padding: 10px 30%;
+}
 
 label {
     color: #000000;
@@ -87,6 +90,10 @@ textarea {
     border: 1px solid #81878A;
     outline: none;
     font-family: Georgia;
+}
+
+.content-form{
+    padding: 2% 30%;
 }
 
 button {
@@ -132,3 +139,4 @@ button:hover {
     height: 40px;
 
 }
+

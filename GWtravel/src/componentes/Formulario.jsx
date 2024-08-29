@@ -1,126 +1,73 @@
-import React, { useState } from 'react';
+import { Fragment, useState } from "react";
+import { Form } from 'react-bootstrap';
 import './EstiloContacto.css';
 
-const Formulario = () => {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        company: '',
-        message: ''
-    });
-    const [errors, setErrors] = useState({});
+const EfectoContacto = () => {
+    const [Nombres, setNombres] = useState('');
+    const [Telefono, setTelefono] = useState('');
+    const [Correo, setCorreo] = useState('');
+    const [Presupuesto, setPresupuesto] = useState('');
+    const [Destino, setDestino] = useState('');
+    const [Salida, setSalida] = useState('');
+    const [Retorno, setRetorno] = useState('');
 
-    const handleChange = (e) => {
-        setFormData({
-            ...formData,
-            [e.target.name]: e.target.value
-        });
-    };
+    const regexTexto = /^[a-zA-ZÁÉÍÓÚñ\s]+$/;
+    const regexEmail = /^[\w\.-]+@[a-zA-Z\d\.-]+\.[a-zA-Z]{2,6}$/;
 
-    const validate = () => {
-        const newErrors = {};
-        const nameRegex = /^[a-zA-ZÁÉÍÓÚñ\s]+$/;
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-        if (!formData.name || formData.name.length < 3 || !nameRegex.test(formData.name)) {
-            newErrors.name = 'Nombre inválido (mínimo 3 caracteres, solo letras y espacios)';
-        }
-        if (!emailRegex.test(formData.email)) {
-            newErrors.email = 'Email inválido';
-        }
-        if (!formData.company || formData.company.length < 2) {
-            newErrors.company = 'Compañía/Organización inválida (mínimo 2 caracteres)';
-        }
-        if (!formData.message) {
-            newErrors.message = 'Mensaje es requerido';
-        }
-
-        return newErrors;
-    };
-
-    const handleSubmit = (e) => {
+    const realizarEnvio = (e) => {
         e.preventDefault();
-        const formErrors = validate();
-        if (Object.keys(formErrors).length === 0) {
-            alert('Datos correctos. Formulario enviado exitosamente.');
-        } else {
-            setErrors(formErrors);
-            let errorMessage = 'Por favor corrige los siguientes errores:\n';
-            for (const [key, value] of Object.entries(formErrors)) {
-                errorMessage += `- ${value}\n`;
-            }
-            alert(errorMessage);
-        }
-    };
 
-    const handleFocus = (e) => {
-        if (e.target.value === e.target.placeholder) {
-            setFormData({
-                ...formData,
-                [e.target.name]: ''
-            });
+        if (Nombres === '' || Telefono === '' || Correo === '' || Presupuesto === '' || Destino === '' || Salida === '' || Retorno === '') {
+            alert('Las cajas de texto están vacías');
+        } else if (!regexTexto.test(Nombres) || !regexEmail.test(Correo)) {
+            alert('Los datos son inválidos');
+        } else {
+            alert(`Datos ingresados: { Nombres: ${Nombres}, Teléfono: ${Telefono}, Correo: ${Correo}, Presupuesto: ${Presupuesto}, Destino: ${Destino}, Salida: ${Salida}, Retorno: ${Retorno} }`);
         }
-    };
+    }
 
     return (
-        <main>
-            <h1 className='tituloC'>Contáctanos</h1>
-            <div className="contenedor">
-                <div className="fContacto">
-                    <form onSubmit={handleSubmit}>
-                        <label htmlFor="name">Nombres y Apellidos*</label>
-                        <input
-                            type="text"
-                            name="name"
-                            value={formData.name}
-                            onChange={handleChange}
-                            onFocus={handleFocus}
-                            placeholder="Ingrese su nombre completo"
-                            required
-                        />
-                        {errors.name && <p className="error">{errors.name}</p>}
+        <div className="content-form">
+            <Form onSubmit={realizarEnvio}>
+            <Form.Group className="form-group">
+                <Form.Label className="w-b">Nombres y apellidos:</Form.Label>
+                <Form.Control id="name" type="text" placeholder="Nombres y apellidos" required value={Nombres} onChange={(e) => setNombres(e.target.value)} />
+            </Form.Group>
 
-                        <label htmlFor="email">Email*</label>
-                        <input
-                            type="email"
-                            name="email"
-                            value={formData.email}
-                            onChange={handleChange}
-                            onFocus={handleFocus}
-                            placeholder="Ingrese su correo electrónico"
-                            required
-                        />
-                        {errors.email && <p className="error">{errors.email}</p>}
+            <Form.Group className="form-group">
+                <Form.Label className="w-b">Telefono:</Form.Label>
+                <Form.Control type="text" placeholder="Telefono" required value={Telefono} onChange={(e) => setTelefono(e.target.value)} />
+            </Form.Group>
 
-                        <label htmlFor="company">Compañía/Organización*</label>
-                        <input
-                            type="text"
-                            name="company"
-                            value={formData.company}
-                            onChange={handleChange}
-                            onFocus={handleFocus}
-                            placeholder="Ingresa tu compañía"
-                            required
-                        />
-                        {errors.company && <p className="error">{errors.company}</p>}
+            <Form.Group className="form-group">
+                <Form.Label className="w-b">Correo</Form.Label>
+                <Form.Control type="text" placeholder="Correo" required value={Correo} onChange={(e) => setCorreo(e.target.value)} />
+            </Form.Group>
 
-                        <label htmlFor="message">Mensaje*</label>
-                        <textarea
-                            name="message"
-                            value={formData.message}
-                            onChange={handleChange}
-                            onFocus={handleFocus}
-                            placeholder="Déjanos tu comentario"
-                            required
-                        />
-                        {errors.message && <p className="error">{errors.message}</p>}
+            <Form.Group className="form-group">
+                <Form.Label className="w-b">Presupuesto</Form.Label>
+                <Form.Control type="text" placeholder="Presupuesto" required value={Presupuesto} onChange={(e) => setPresupuesto(e.target.value)} />
+            </Form.Group>
 
-                        <button type="submit">Enviar</button>
-                    </form>
-                </div>
-            </div>
-        </main>
+            <Form.Group className="form-group">
+                <Form.Label className="w-b">Destino</Form.Label>
+                <Form.Control type="text" placeholder="Destino" required value={Destino} onChange={(e) => setDestino(e.target.value)} />
+            </Form.Group>
+
+            <Form.Group className="form-group">
+                <Form.Label className="w-b">Salida</Form.Label>
+                <Form.Control type="text" placeholder="Salida" required value={Salida} onChange={(e) => setSalida(e.target.value)} />
+            </Form.Group>
+
+            <Form.Group className="form-group">
+                <Form.Label className="w-b">Retorno</Form.Label>
+                <Form.Control type="text" placeholder="Retorno" required value={Retorno} onChange={(e) => setRetorno(e.target.value)} />
+            </Form.Group>
+
+            <button type="submit">Enviar</button>
+        </Form>
+        </div>
     );
-};
+}
 
-export default Formulario;
+export default EfectoContacto;

@@ -21,11 +21,10 @@ function BannerInicio() {
       nuevaImg((indicePrevio) => (indicePrevio + 1) % imagen.length);
     };
 
-    // Iniciar la rotación cada segundo
+    // Iniciar la rotación cada 3 segundos
     const intervaloId = setInterval(rotarImagen, 3000);
 
-    // Agregamos console.log para depuración
-    console.log(`Imagen actual: ${imagen[indiceImg]}`);
+   
 
     // Limpiar el intervalo cuando el componente se desmonte
     return () => clearInterval(intervaloId);
